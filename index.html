@@ -15,40 +15,39 @@
     />
 
     <title>Materialize CSS</title>
-    <style>
-      .col > div {
-        background: lightblue;
-        height: 120px;
-      }
-    </style>
   </head>
   <body>
-    <!-- Grid row>col s(small size screen))3 m3(medium size screen) 그리드는 12칸을 차지하는데 s3 3칸의 space를 가져가겠다 -->
-    <div class="container">
-      <h4>Shadows & Depth</h4>
-      <div class="row">
-        <div class="col s2">
-          <div></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-1"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-2"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-3"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-4"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-5"></div>
-        </div>
+    <nav class="nav-wrapper indigo">
+      <div class="container">
+        <a href="#" class="brand-logo">Site Title</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
+    <ul class="sidenav" id="mobile-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </body>
 </html>
