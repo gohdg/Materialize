@@ -23,31 +23,60 @@
     </style>
   </head>
   <body>
-    <nav class="nav-wrapper indigo">
-      <div class="container">
-        <a href="#" class="brand-logo">Site Title</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-links">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="#" class="btn-floating indigo darken-4 z-depth-0">
-              <i class="material-icons">notifications</i>
-            </a>
-          </li>
-          <li><span class="badge white-text pink new">5</span></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <h2>Cards</h2>
 
-    <ul class="sidenav" id="mobile-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+      <div class="row">
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/curry.jpg" alt="" />
+              <!-- halfway-fab (fab stands for floating action button) -->
+              <a href="#" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">favorite</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Mango & Chickpea Curry</span>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt quis aspernatur vitae eius reiciendis. Corporis earum
+                quibusdam officia eos voluptate. Provident optio nostrum
+                corrupti ipsa.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">More details</a>
+              <a href="#">View ingredients</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pasta.jpg" alt="" />
+              <!-- halfway-fab (fab stands for floating action button) -->
+              <a href="#" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">favorite</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Rainbow Pasta Salad</span>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt quis aspernatur vitae eius reiciendis. Corporis earum
+                quibusdam officia eos voluptate. Provident optio nostrum
+                corrupti ipsa.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">More details</a>
+              <a href="#">View ingredients</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -55,10 +84,5 @@
     ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-      });
-    </script>
   </body>
 </html>
