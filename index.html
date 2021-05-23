@@ -24,41 +24,17 @@
   </head>
   <body>
     <div class="container">
-      <h2>Collections</h2>
-      <ul class="collection with-header">
-        <li class="collection-header"><h4>Customers</h4></li>
-        <li class="collection-item avatar">
-          <i class="material-icons circle blue">person</i>
+      <h2>Modals</h2>
+      <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
 
-          <span class="title">Ryu</span>
-          <p class="grey-text">black-belt</p>
-          <a href="#" class="secondary-content">
-            <i class="material-icons blue-text">email</i>
-          </a>
-        </li>
-        <li class="collection-item avatar">
-          <i class="material-icons circle blue">person</i>
-
-          <span class="title">Yoshi</span>
-          <p class="grey-text">black-belt</p>
-          <a href="#" class="secondary-content">
-            <i class="material-icons blue-text">email</i>
-          </a>
-        </li>
-        <li class="collection-item avatar">
-          <i class="material-icons circle blue">person</i>
-
-          <span class="title">Crystal</span>
-          <p class="grey-text">black-belt</p>
-          <a href="#" class="secondary-content">
-            <i class="material-icons blue-text">email</i>
-          </a>
-        </li>
-
-        <li class="collection-item">Mario</li>
-        <li class="collection-item">Luigi</li>
-        <li class="collection-item">Bowser</li>
-      </ul>
+      <div class="modal" id="terms">
+        <div class="modal-content">
+          <h4>Terms & Conditions</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi saepe fugit earum ipsum amet optio ducimus illum expedita quidem. Impedit modi ad est assumenda iure! Quibusdam culpa modi ducimus!</p>
+        </div>
+       <div class="modal-footer">
+         <a href="#" class="modal-close btn orange">Agree & Close</a>
+       </div>
     </div>
 
     <script
@@ -67,5 +43,10 @@
     ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
+    </script>
   </body>
 </html>
