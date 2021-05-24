@@ -68,6 +68,43 @@
             <li><a href="#">Photo's</a></li>
             <li><a href="#">Serivces</a></li>
             <li><a href="#">Contact</a></li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="This is Instagram"
+                data-position="bottom"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="This is Facebook"
+              >
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="This is Linked In"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="This is Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
           </ul>
           <ul class="sidenav grey lighten-2" id="mobile-menu">
             <li><a href="#">Photo's</a></li>
@@ -323,6 +360,9 @@
           autoClose: true,
           disableWeekends: true,
         });
+
+        var tooltips = document.querySelectorAll(".tooltipped");
+        var instances5 = M.Tooltip.init(tooltips, {});
       });
 
       // $(document).ready(function () {
@@ -330,6 +370,8 @@
       //   $(".materialboxed").materialbox();
       //   $(".parallax").parallax();
       //   $(".tabs").tabs();
+      //   $('.tooltipped').tooltip();
+      //   $('.datepicker').datepicker();
 
       // });
     </script>
