@@ -41,6 +41,14 @@
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
+      .tabs .indicator {
+        background: #1a237e;
+      }
+
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
     </style>
   </head>
   <body>
@@ -122,24 +130,61 @@
     </div>
 
     <!-- services / tabs -->
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint optio
-        soluta at incidunt. Dolore optio tempore nulla itaque reprehenderit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint optio
-        soluta at incidunt. Dolore optio tempore nulla itaque reprehenderit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint optio
-        soluta at incidunt. Dolore optio tempore nulla itaque reprehenderit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint optio
-        soluta at incidunt. Dolore optio tempore nulla itaque reprehenderit?
-      </p>
-    </div>
+    <section class="container section" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do...</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+            soluta ducimus ex autem ipsa minus mollitia aliquam optio quia
+            accusantium?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+            soluta ducimus ex autem ipsa minus mollitia aliquam optio quia
+            accusantium?
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="indigo-text text-darken-4"
+                >Photography</a
+              >
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              mollitia at in optio voluptatem assumenda eligendi asperiores
+              quam, possimus error.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              mollitia at in optio voluptatem assumenda eligendi asperiores
+              quam, possimus error.
+            </p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">EDITING</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              mollitia at in optio voluptatem assumenda eligendi asperiores
+              quam, possimus error.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              mollitia at in optio voluptatem assumenda eligendi asperiores
+              quam, possimus error.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- parallax -->
     <div class="parallax-container">
@@ -184,12 +229,16 @@
 
         var parallaxes = document.querySelectorAll(".parallax");
         var instances2 = M.Parallax.init(parallaxes, {});
+
+        var tabs = document.querySelectorAll(".tabs");
+        var instances3 = M.Tabs.init(tabs, {});
       });
 
       // $(document).ready(function () {
       //   $(".sidenav").sidenav();
       //   $(".materialboxed").materialbox();
       //   $(".parallax").parallax();
+      //   $(".tabs").tabs();
 
       // });
     </script>
